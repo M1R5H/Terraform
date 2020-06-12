@@ -1,5 +1,5 @@
 provider "google" {
-    credentials = "../../../global/access.json"
+    credentials = var.credentials
     project = "aerobic-bonus-270814"
     region  = "europe-west2"
     zone    = "europe-west2-a"
@@ -7,7 +7,7 @@ provider "google" {
 
 terraform {
   backend "gcs" {
-    credentials = "../../../global/access.json"
+    credentials = var.credentials
     bucket  = "test_terraform_bucket"
     prefix  = "terraform/stage/state"
   }
