@@ -1,9 +1,9 @@
-provider "google" {
-    credentials = var.credentials
-    project = "aerobic-bonus-270814"
-    region  = "europe-west2"
-    zone    = "europe-west2-a"
-}
+# provider "google" {
+#     #credentials = var.credentials
+#     project = "aerobic-bonus-270814"
+#     region  = "europe-west2"
+#     zone    = "europe-west2-a"
+# }
 
 terraform {
   backend "gcs" {
